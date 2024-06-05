@@ -1,7 +1,8 @@
 project('softfloat', ['c'],
-  # license_files: ['LICENSE.txt'],
+  default_options: ['werror=false'],
   version: '2c',
-  meson_version: '>=0.47.0')
+  meson_version: '>=0.47.0'
+)
 
 softfloat_files = [
   'src/softfloat.c',
