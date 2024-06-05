@@ -1,7 +1,6 @@
 project('softfloat', ['c'],
   default_options: ['werror=false'],
   version: '2c',
-  meson_version: '>=0.47.0'
 )
 
 softfloat_files = [
@@ -20,3 +19,5 @@ softfloat_dep = declare_dependency(
   link_with: librzsoftfloat,
   include_directories: softfloat_inc,
 )
+
+meson.override_dependency('softfloat', softfloat_dep)
