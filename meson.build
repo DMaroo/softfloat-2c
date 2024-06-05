@@ -1,5 +1,4 @@
 project('softfloat', ['c'],
-  default_options: ['werror=false'],
   version: '2c',
 )
 
