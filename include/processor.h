@@ -1,5 +1,4 @@
 #include <stdint.h>
-#include <stdbool.h>
 
 /*----------------------------------------------------------------------------
 | One of the macros `BIGENDIAN' or `LITTLEENDIAN' must be defined.
@@ -20,7 +19,8 @@
 | implementations of C, `flag', `uint8', and `int8' should all be `typedef'ed
 | to the same as `int'.
 *----------------------------------------------------------------------------*/
-typedef bool flag;
+/* Cannot make the flag a bool because the code tries to use this as an integer. */
+typedef uint8_t flag;
 typedef uint8_t uint8;
 typedef int8_t int8;
 typedef uint16_t uint16;

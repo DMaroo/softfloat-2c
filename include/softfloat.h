@@ -133,13 +133,13 @@ float32 float32_mul( float32, float32 );
 float32 float32_div( float32, float32 );
 float32 float32_rem( float32, float32 );
 float32 float32_sqrt( float32 );
-bool float32_eq( float32, float32 );
-bool float32_le( float32, float32 );
-bool float32_lt( float32, float32 );
-bool float32_eq_signaling( float32, float32 );
-bool float32_le_quiet( float32, float32 );
-bool float32_lt_quiet( float32, float32 );
-bool float32_is_signaling_nan( float32 );
+uint8_t float32_eq( float32, float32 );
+uint8_t float32_le( float32, float32 );
+uint8_t float32_lt( float32, float32 );
+uint8_t float32_eq_signaling( float32, float32 );
+uint8_t float32_le_quiet( float32, float32 );
+uint8_t float32_lt_quiet( float32, float32 );
+uint8_t float32_is_signaling_nan( float32 );
 
 /*----------------------------------------------------------------------------
 | Software IEEE double-precision conversion routines.
@@ -166,13 +166,13 @@ float64 float64_mul( float64, float64 );
 float64 float64_div( float64, float64 );
 float64 float64_rem( float64, float64 );
 float64 float64_sqrt( float64 );
-bool float64_eq( float64, float64 );
-bool float64_le( float64, float64 );
-bool float64_lt( float64, float64 );
-bool float64_eq_signaling( float64, float64 );
-bool float64_le_quiet( float64, float64 );
-bool float64_lt_quiet( float64, float64 );
-bool float64_is_signaling_nan( float64 );
+uint8_t float64_eq( float64, float64 );
+uint8_t float64_le( float64, float64 );
+uint8_t float64_lt( float64, float64 );
+uint8_t float64_eq_signaling( float64, float64 );
+uint8_t float64_le_quiet( float64, float64 );
+uint8_t float64_lt_quiet( float64, float64 );
+uint8_t float64_is_signaling_nan( float64 );
 
 #ifdef FLOATX80
 
@@ -205,13 +205,13 @@ floatx80 floatx80_mul( floatx80, floatx80 );
 floatx80 floatx80_div( floatx80, floatx80 );
 floatx80 floatx80_rem( floatx80, floatx80 );
 floatx80 floatx80_sqrt( floatx80 );
-bool floatx80_eq( floatx80, floatx80 );
-bool floatx80_le( floatx80, floatx80 );
-bool floatx80_lt( floatx80, floatx80 );
-bool floatx80_eq_signaling( floatx80, floatx80 );
-bool floatx80_le_quiet( floatx80, floatx80 );
-bool floatx80_lt_quiet( floatx80, floatx80 );
-bool floatx80_is_signaling_nan( floatx80 );
+uint8_t floatx80_eq( floatx80, floatx80 );
+uint8_t floatx80_le( floatx80, floatx80 );
+uint8_t floatx80_lt( floatx80, floatx80 );
+uint8_t floatx80_eq_signaling( floatx80, floatx80 );
+uint8_t floatx80_le_quiet( floatx80, floatx80 );
+uint8_t floatx80_lt_quiet( floatx80, floatx80 );
+uint8_t floatx80_is_signaling_nan( floatx80 );
 
 #endif
 
@@ -240,12 +240,12 @@ float128 float128_mul( float128, float128 );
 float128 float128_div( float128, float128 );
 float128 float128_rem( float128, float128 );
 float128 float128_sqrt( float128 );
-bool float128_eq( float128, float128 );
-bool float128_le( float128, float128 );
-bool float128_lt( float128, float128 );
-bool float128_eq_signaling( float128, float128 );
-bool float128_le_quiet( float128, float128 );
-bool float128_lt_quiet( float128, float128 );
-bool float128_is_signaling_nan( float128 );
+uint8_t float128_eq( float128, float128 );
+uint8_t float128_le( float128, float128 );
+uint8_t float128_lt( float128, float128 );
+uint8_t float128_eq_signaling( float128, float128 );
+uint8_t float128_le_quiet( float128, float128 );
+uint8_t float128_lt_quiet( float128, float128 );
+uint8_t float128_is_signaling_nan( float128 );
 
 #endif
